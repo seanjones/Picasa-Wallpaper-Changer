@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PhotoDataSet" targetNamespace="http://tempuri.org/PhotoDataSet.xsd" xmlns:mstns="http://tempuri.org/PhotoDataSet.xsd" xmlns="http://tempuri.org/PhotoDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PhotoDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="PhotoDataSet" msprop:Generator_DataSetName="PhotoDataSet" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Photo" msprop:Generator_UserTableName="Photo" msprop:Generator_RowDeletedName="PhotoRowDeleted" msprop:Generator_RowChangedName="PhotoRowChanged" msprop:Generator_RowClassName="PhotoRow" msprop:Generator_RowChangingName="PhotoRowChanging" msprop:Generator_RowEvArgName="PhotoRowChangeEvent" msprop:Generator_RowEvHandlerName="PhotoRowChangeEventHandler" msprop:Generator_TableClassName="PhotoDataTable" msprop:Generator_TableVarName="tablePhoto" msprop:Generator_RowDeletingName="PhotoRowDeleting" msprop:Generator_TablePropName="Photo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:string" />
+              <xs:element name="PhotoID" msprop:Generator_UserColumnName="PhotoID" msprop:Generator_ColumnVarNameInTable="columnPhotoID" msprop:Generator_ColumnPropNameInRow="PhotoID" msprop:Generator_ColumnPropNameInTable="PhotoIDColumn" type="xs:unsignedLong" minOccurs="0" />
+              <xs:element name="Title" msprop:Generator_UserColumnName="Title" msprop:Generator_ColumnVarNameInTable="columnTitle" msprop:Generator_ColumnPropNameInRow="Title" msprop:Generator_ColumnPropNameInTable="TitleColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Album" msprop:Generator_UserColumnName="Album" msprop:Generator_ColumnVarNameInTable="columnAlbum" msprop:Generator_ColumnPropNameInRow="Album" msprop:Generator_ColumnPropNameInTable="AlbumColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Height" msprop:Generator_UserColumnName="Height" msprop:Generator_ColumnVarNameInTable="columnHeight" msprop:Generator_ColumnPropNameInRow="Height" msprop:Generator_ColumnPropNameInTable="HeightColumn" type="xs:unsignedShort" minOccurs="0" />
+              <xs:element name="Width" msprop:Generator_UserColumnName="Width" msprop:Generator_ColumnVarNameInTable="columnWidth" msprop:Generator_ColumnPropNameInRow="Width" msprop:Generator_ColumnPropNameInTable="WidthColumn" type="xs:unsignedShort" minOccurs="0" />
+              <xs:element name="Uploaded" msprop:Generator_UserColumnName="Uploaded" msprop:Generator_ColumnVarNameInTable="columnUploaded" msprop:Generator_ColumnPropNameInRow="Uploaded" msprop:Generator_ColumnPropNameInTable="UploadedColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Location" msprop:Generator_UserColumnName="Location" msprop:Generator_ColumnVarNameInTable="columnLocation" msprop:Generator_ColumnPropNameInRow="Location" msprop:Generator_ColumnPropNameInTable="LocationColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Keep" msprop:Generator_UserColumnName="Keep" msprop:Generator_ColumnVarNameInTable="columnKeep" msprop:Generator_ColumnPropNameInRow="Keep" msprop:Generator_ColumnPropNameInTable="KeepColumn" type="xs:boolean" default="true" minOccurs="0" />
+              <xs:element name="AlbumId" msprop:Generator_UserColumnName="AlbumId" msprop:Generator_ColumnVarNameInTable="columnAlbumId" msprop:Generator_ColumnPropNameInRow="AlbumId" msprop:Generator_ColumnPropNameInTable="AlbumIdColumn" type="xs:unsignedLong" default="0" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Log" msprop:Generator_UserTableName="Log" msprop:Generator_RowDeletedName="LogRowDeleted" msprop:Generator_RowChangedName="LogRowChanged" msprop:Generator_RowClassName="LogRow" msprop:Generator_RowChangingName="LogRowChanging" msprop:Generator_RowEvArgName="LogRowChangeEvent" msprop:Generator_RowEvHandlerName="LogRowChangeEventHandler" msprop:Generator_TableClassName="LogDataTable" msprop:Generator_TableVarName="tableLog" msprop:Generator_RowDeletingName="LogRowDeleting" msprop:Generator_TablePropName="Log">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LastModified" msprop:Generator_UserColumnName="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Photo" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+    <xs:unique name="Constraint2">
+      <xs:selector xpath=".//mstns:Photo" />
+      <xs:field xpath="mstns:PhotoID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
