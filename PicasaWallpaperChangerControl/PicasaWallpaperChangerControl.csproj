@@ -219,12 +219,6 @@
     <None Include="Resources\background.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PicasaReader\PicasaReader.csproj">
-      <Project>{70293231-E3EC-48BA-94BC-B9FA748FDC2D}</Project>
-      <Name>PicasaReader</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
       <Visible>False</Visible>
       <ProductName>.NET Framework Client Profile</ProductName>
@@ -255,6 +249,12 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PicasaReader\PicasaReader.csproj">
+      <Project>{70293231-E3EC-48BA-94BC-B9FA748FDC2D}</Project>
+      <Name>PicasaReader</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
